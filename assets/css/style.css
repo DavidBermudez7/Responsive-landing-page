@@ -119,4 +119,20 @@ img {
     background-clip: text;
 }
 
+/* Layout */ 
+
+.main {
+    overflow: hidden; /*For animation and images*/
+
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grind {
+    display: grid;
+}
 

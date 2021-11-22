@@ -28,14 +28,14 @@
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-    /*========== Margenes Bottom ==========*/
+    /*========== Bottom Margins ==========*/
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
-    /*========== z index ==========*/
+    /*========== index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
   }
@@ -135,4 +135,62 @@ img {
 .grind {
     display: grid;
 }
+/*============== HEAD£R ==========*/
 
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: transparent;
+}
+
+/* NAV */
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    width: 1rem;
+}
+.nav__toggle {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        background-color: var(--body-color);
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: .4s;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem ;
+}
+.nav__link{
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}

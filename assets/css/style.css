@@ -216,10 +216,16 @@ img {
     cursor: pointer;
 }
 
-
+/* Show menu */ 
 .show-menu {
     top: 0px;
 }
+
+/* Change background header */
+.scroll-header {
+    background-color: var(--body-color);
+}
+
 
 /* Home */
 

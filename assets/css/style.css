@@ -175,9 +175,13 @@ img {
         padding: 4rem 0 3rem;
         transition: .4s;
     }
+
+
 }
 
 .nav__list {
+    /*Puede ser problematica*/
+    /*margin-top: 20rem;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,4 +197,26 @@ img {
     -webkit-background-clip: text;
     background-clip: text;
 
+}
+
+.nav__link:hover {
+    background: white;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.nav__close {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+
+.show-menu {
+    top: 0px;
 }

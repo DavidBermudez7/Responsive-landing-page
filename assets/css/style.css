@@ -318,41 +318,43 @@ img {
 }
 
 /* Specs */
-
-.specs_container {
+/* ============= WOKRS ON 425px ============ */ 
+.specs__container {
     position: relative;
-}
-
-.specs__content {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  
+  .specs__content {
     row-gap: 1.5rem;
-}
-
-.specs__data {
+  }
+  
+  .specs__data {
     display: grid;
     row-gap: .25rem;
-}
-
-.specs__icon {
+  }
+  
+  .specs__icon {
     font-size: 1.2rem;
     color: var(--white-color);
-}
-
-.specs__title {
+  }
+  
+  .specs__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-}
-
-.specs__subtitle {
+  }
+  
+  .specs__subtitle {
     font-size: var(--smaller-font-size);
-}
-
-.specs__data:nth-child(1), .specs__data:nth-child(4) {
+  }
+  
+  .specs__data:nth-child(1), .specs__data:nth-child(4) {
     margin-left: 1.5rem;
-}
-
-.specs__img {
+  }
+  
+  .specs__img {
     width: 250px;
     position: absolute;
     top: 2rem;
-    right: -4rem;
-}
+    right: -.25rem;
+  }

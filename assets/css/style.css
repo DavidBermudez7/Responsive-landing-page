@@ -15,7 +15,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
     --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif !important;
     --biggest-font-size: 5rem;
     --bigger-font-size: 3.5rem;
     --big-font-size: 2.5rem;
@@ -294,7 +294,7 @@ img {
 }
 
 .button__icon {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .button--flex {
@@ -357,4 +357,26 @@ img {
     position: absolute;
     top: 2rem;
     right: -.25rem;
+  }
+
+  /* ========== CASE ========== */
+
+  .case__container {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case__data {
+      padding: 5rem 0 3rem;
+  }
+
+  .case__img {
+      width: 250px;
+      position: absolute;
+      left: -7rem;
+  }
+
+  .case__description {
+      margin-bottom: var(--mb-1-5);
+      line-height: var(--text-line-height);
   }
